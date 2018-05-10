@@ -21,3 +21,6 @@ Tässä vaiheessa testasin tilaa bash scriptillä, joka ajaa highstaten lokaalis
 
 Salt osuus näyttää toimivan ainakin koneella, jossa kaikki on jo valmiiksi asennettuna.
 
+Loin tämän jälkeen testausta varten bash tiedoston, jossa käytin pohjana Tero Karvisen sirotinta: https://github.com/terokarvinen/sirotin/blob/master/run.sh
+
+Tämän jälkeen siirryin live tikulle testaamaan tilaa.
