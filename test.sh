@@ -12,5 +12,4 @@ echo 'master: localhost'|sudo tee /etc/salt/minion
 
 git clone https://github.com/Vipa94/Module
 cd Module/
-
-./module.sh
+bash module.sh

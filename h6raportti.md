@@ -69,3 +69,6 @@ Manuaalinen ajo kuitenkin toimi vallan mainiosti, ja tekstiä onnistuneista tapa
 
 Kaikki asentui niin kuin pitää, joten tässä vaiheessa lienee hyvä hetki alkaa painiskella tuon
 ./module.sh komennon parissa, ja koittaa saada se automatisoitua
+
+Ratkaisin ongelman muuttamalla rivin muototoon bash module.sh. Kun ajoin test.sh tiedoston muutoksen jälkeen,
+meni skripti läpi, ja sain koko homman ajettua kahdella komennolla.
