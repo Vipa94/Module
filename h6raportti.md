@@ -23,4 +23,49 @@ Salt osuus näyttää toimivan ainakin koneella, jossa kaikki on jo valmiiksi as
 
 Loin tämän jälkeen testausta varten bash tiedoston, jossa käytin pohjana Tero Karvisen sirotinta: https://github.com/terokarvinen/sirotin/blob/master/run.sh
 
+	# Original by Tero Karvinen http://TeroKarvinen.com GPL 3
+	# GitHub: https://github.com/terokarvinen/sirotin/blob/master/run.sh
+
+	#!/bin/bash
+
+
+	sudo apt-get update
+	sudo apt-get -y install git salt-minion
+
+
+	echo 'master: localhost'|sudo tee /etc/salt/minion
+
+	git clone https://github.com/Vipa94/Module
+	cd Module/
+
+	./module.sh
+
+
 Tämän jälkeen siirryin live tikulle testaamaan tilaa.
+
+##b) Kokeile moduliasi tyhjässä koneessa. Voit käyttää virtualboxia, vagranttia tai livetikkua.
+
+
+
+Aloitin testauksen antamalla komennon:
+
+	wget https://raw.githubusercontent.com/Vipa94/Module/master/test.sh
+
+ja ajamalla kysessä olevan bash skriptin
+
+	bash test.sh
+
+Skripti toimi muuten mainiosti, mutta jostain syystä skriptin lopussa oleva
+./module.sh rivi ei ajanut kyseessäolevaa skriptiä, vaan ilmoitti, että oikeuksia tiedostoon ei olisi
+
+Manuaalinen ajo kuitenkin toimi vallan mainiosti, ja tekstiä onnistuneista tapahtumista terminaaliin tuli sivukaupalla. Lopussa tuli vielä ilmoitus, että saltin kautta asennus on onnistunut:
+
+	Summary for local
+	-------------
+	Succeeded: 11 (changed=11)
+	Failed:     0
+	-------------
+	Total states run:     11
+
+Kaikki asentui niin kuin pitää, joten tässä vaiheessa lienee hyvä hetki alkaa painiskella tuon
+./module.sh komennon parissa, ja koittaa saada se automatisoitua
