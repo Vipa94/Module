@@ -9,6 +9,7 @@ Tässä vaiheessa testasin tilaa bash scriptillä, joka ajaa highstaten lokaalis
 
 	local:
 	----------
+	## Tila testasi kaikki 11 komentoa onnistuneesti, poistin lyhentääkseni tekstiä
 
 	Summary for local
 	-------------
