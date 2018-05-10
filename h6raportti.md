@@ -43,7 +43,7 @@ Loin tämän jälkeen testausta varten bash tiedoston, jossa käytin pohjana Ter
 
 Tämän jälkeen siirryin live tikulle testaamaan tilaa.
 
-##b) Kokeile moduliasi tyhjässä koneessa. Voit käyttää virtualboxia, vagranttia tai livetikkua.
+## b) Kokeile moduliasi tyhjässä koneessa. Voit käyttää virtualboxia, vagranttia tai livetikkua.
 
 
 
@@ -72,11 +72,21 @@ Kaikki asentui niin kuin pitää, joten tässä vaiheessa lienee hyvä hetki alk
 
 Ratkaisin ongelman muuttamalla rivin muototoon bash module.sh. Kun ajoin test.sh tiedoston muutoksen jälkeen,
 meni skripti läpi, ja sain koko homman ajettua kahdella komennolla.
+
+	wget https://raw.githubusercontent.com/Vipa94/Module/master/test.sh
+	bash test.sh
+
 Kokeilen asennusta vielä uudestaan tyhjään tikkuun ja lisäämällä test.sh tiedostoon rivin, joka muuttaa näppäimistön suomalaiseksi, lähinnä livetikkua ajatellen.
 Uusi yritys, ja tällä kertaa myös tuo module.sh skripti tiedosto ajettiin automaattisesti. Nyt voi alkaa sitten miettimään parannuksia.
 
+	-------------
+	Succeeded: 11
+	Failed:     0
+	-------------
+	Total states run:     11
 
-##c) Käyttäjätarina (user story): ketkä ovat modulisi käyttäjät? Mitä he haluavat saada aikaan modulillasi? Missä tilanteessa he sitä käyttävät? Mitkä ovat tärkeimmät parannukset käyttäjän kannalta, joita moduliin pitäisi vielä tehdä? Tähän c-kohtaan vain sanallinen vastaus, tämä kohta ei poikkeuksellisesti edellytä testejä tietokoneella.
+
+## c) Käyttäjätarina (user story): ketkä ovat modulisi käyttäjät? Mitä he haluavat saada aikaan modulillasi? Missä tilanteessa he sitä käyttävät? Mitkä ovat tärkeimmät parannukset käyttäjän kannalta, joita moduliin pitäisi vielä tehdä? Tähän c-kohtaan vain sanallinen vastaus, tämä kohta ei poikkeuksellisesti edellytä testejä tietokoneella.
 
 Moduuli on ehkä enemmän omaan, kavereiden ja tulevien kolleegojen käyttöön tarkoitettu, sillä tavoitteenani on saada tästä valmis moduuli, joka nopeuttaa ja yksinkertaistaa uuden virtuaalipalvelimen käyttöönottoa.
 Lisäksi tilaa voisi käyttää myös live-tikulla, aina kun tilanne sitä vaatii. En ole itse ihan vielä tyytyväinen lopputulokseen, ja yritän vielä kysellä eri henkilöiltä erilaisia ideoita ohjelmien asennuksen ja erilaisten asetusten suhteen. Käyttäjän kannalta moduuli on jo varsin hyvä, sillä se asentaa virtuaalipalvelimen käyttöönottoon ja testaukseen tarvittavia ohjelmistoja. Yritän kuitenkin vielä parannella moduulia parhaan kykyni mukaan.
