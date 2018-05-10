@@ -72,3 +72,4 @@ Kaikki asentui niin kuin pitää, joten tässä vaiheessa lienee hyvä hetki alk
 
 Ratkaisin ongelman muuttamalla rivin muototoon bash module.sh. Kun ajoin test.sh tiedoston muutoksen jälkeen,
 meni skripti läpi, ja sain koko homman ajettua kahdella komennolla.
+Kokeilen asennusta vielä uudestaan tyhjään tikkuun ja lisäämällä test.sh tiedostoon rivin, joka muuttaa näppäimistön suomalaiseksi, lähinnä livetikkua ajatellen.
