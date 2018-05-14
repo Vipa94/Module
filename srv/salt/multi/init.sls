@@ -1,0 +1,2 @@
+multitail:
+  pkg.installed
