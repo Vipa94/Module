@@ -1,7 +1,7 @@
 # Module
 
 ##  This project module is an easy way to take your VPS or live-USB to use.
-##  These are the to commands you need to run the script which installs the states.
+These are the to commands you need to run the script which installs the states.
 
 
 
