@@ -2,5 +2,5 @@
 
 /etc/skel/public_html/index.html:
   file.managed:
-     - source: salt://index.html
+     - source: salt://skel/index.html
      - makedirs: True
