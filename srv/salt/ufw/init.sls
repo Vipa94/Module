@@ -14,4 +14,4 @@ ufw2-allow:
 
 ufw-enable:
   cmd.run:
-    - name: 'sudo ufw enable'
+    - name: 'sudo ufw --force enable'
